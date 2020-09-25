@@ -1,1 +1,19 @@
-theme: jekyll-theme-minimal
+title: Verify It
+description: ''
+
+plugins:
+  - jekyll-feed
+
+remote_theme: fongandrew/hydeout
+# Sidebar link settings
+sidebar_home_link: true
+
+paginate: 5
+
+defaults:
+  - scope:
+      path: _posts
+      type: posts
+    values:
+      excerpt_separator: <!--more-->
+      layout: post
