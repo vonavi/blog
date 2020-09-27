@@ -17,3 +17,6 @@ defaults:
     values:
       excerpt_separator: <!--more-->
       layout: post
+
+disqus:
+  shortname: vonavi
