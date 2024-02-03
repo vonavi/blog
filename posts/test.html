@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" class="alectryon-standalone" xml:lang="en" lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8" />
 <meta name="generator" content="Docutils 0.20.1: https://docutils.sourceforge.io/" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Title</title>
 <link rel="stylesheet" href="alectryon.css" type="text/css" />
 <link rel="stylesheet" href="docutils_basic.css" type="text/css" />
@@ -14,20 +14,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<div class="alectryon-root alectryon-centered"><div class="document" id="title">
+<div class="alectryon-root alectryon-centered"><main id="title">
 <h1 class="title">Title</h1>
 
 <pre class="alectryon-io highlight"><!-- Generator: Alectryon --><span class="alectryon-wsp"><span class="c">(* https://plv.csail.mit.edu/blog/alectryon.html#using-alectryon *)</span>
 
 </span><span class="alectryon-sentence"><span class="alectryon-input"><span class="kn">Require Import</span> List.</span><span class="alectryon-wsp">
 </span></span><span class="alectryon-wsp">
-</span><span class="alectryon-sentence"><span class="alectryon-input"><span class="kn">Import</span> ListNotations.</span></span></pre><p>Prose. <em>Emphasis</em>; <strong>strong emphasis</strong>; <tt class="docutils literal">code</tt>; <code class="highlight coq"><span class="n">coq</span> <span class="n">code</span></code>; <a class="reference external" href="url">link</a>.</p>
+</span><span class="alectryon-sentence"><span class="alectryon-input"><span class="kn">Import</span> ListNotations.</span></span></pre><p>Prose. <em>Emphasis</em>; <strong>strong emphasis</strong>; <span class="docutils literal">code</span>; <code class="highlight coq"><span class="n">coq</span> <span class="n">code</span></code>; <a class="reference external" href="url">link</a>.</p>
 <pre class="alectryon-io highlight"><!-- Generator: Alectryon --><span class="alectryon-wsp"><span class="c">(* regular comment *)</span>
 
-<span class="sd">(** Coqdoc comment *)</span></span></pre><div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">More text.</p>
-</div>
+<span class="sd">(** Coqdoc comment *)</span></span></pre><aside class="admonition note">
+<p class="admonition-title">Note</p>
+<p>More text.</p>
+</aside>
 <pre class="alectryon-io highlight"><!-- Generator: Alectryon --><span class="alectryon-sentence"><input class="alectryon-toggle" id="test-v-chk0" style="display: none" type="checkbox"><label class="alectryon-input" for="test-v-chk0"><span class="kn">Lemma</span> <span class="nf">app_nil</span> : <span class="kr">forall</span> <span class="nv">T</span> (<span class="nv">l1</span> : list T), l1 ++ [] = l1.</label><small class="alectryon-output"><div><div class="alectryon-goals"><blockquote class="alectryon-goal"><span class="goal-separator"><hr></span><div class="goal-conclusion"><span class="kr">forall</span> (<span class="nv">T</span> : <span class="kt">Type</span>) (<span class="nv">l1</span> : list T), l1 ++ [] = l1</div></blockquote></div></div></small><span class="alectryon-wsp">
 </span></span><span class="alectryon-wsp">  <span class="c">(* C-c C-a TAB (dans Emacs/PG) *)</span>
 </span><span class="alectryon-wsp">  </span><span class="alectryon-sentence"><input class="alectryon-toggle" id="test-v-chk1" style="display: none" type="checkbox"><label class="alectryon-input" for="test-v-chk1"><span class="nb">intros</span> T l1.</label><small class="alectryon-output"><div><div class="alectryon-goals"><blockquote class="alectryon-goal"><div class="goal-hyps"><span><var>T</var><span class="hyp-type"><b>: </b><span><span class="kt">Type</span></span></span></span><br><span><var>l1</var><span class="hyp-type"><b>: </b><span>list T</span></span></span><br></div><span class="goal-separator"><hr></span><div class="goal-conclusion">l1 ++ [] = l1</div></blockquote></div></div></small><span class="alectryon-wsp">
@@ -36,6 +36,6 @@
 </span></span><span class="alectryon-wsp">  </span><span class="alectryon-sentence"><input class="alectryon-toggle" id="test-v-chk6" style="display: none" type="checkbox"><label class="alectryon-input" for="test-v-chk6"><span class="nb">simpl</span>; <span class="nb">rewrite</span> IHl1.</label><small class="alectryon-output"><div><div class="alectryon-goals"><blockquote class="alectryon-goal"><div class="goal-hyps"><span><var>T</var><span class="hyp-type"><b>: </b><span><span class="kt">Type</span></span></span></span><br><span><var>a</var><span class="hyp-type"><b>: </b><span>T</span></span></span><br><span><var>l1</var><span class="hyp-type"><b>: </b><span>list T</span></span></span><br><span><var>IHl1</var><span class="hyp-type"><b>: </b><span>l1 ++ [] = l1</span></span></span><br></div><span class="goal-separator"><hr></span><div class="goal-conclusion">a :: l1 = a :: l1</div></blockquote></div></div></small><span class="alectryon-wsp">
 </span></span><span class="alectryon-wsp">  </span><span class="alectryon-sentence"><span class="alectryon-input"><span class="bp">easy</span>.</span><span class="alectryon-wsp">
 </span></span><span class="alectryon-sentence"><span class="alectryon-input"><span class="kn">Qed</span>.</span></span></pre>
-</div>
+</main>
 </div></body>
 </html>
